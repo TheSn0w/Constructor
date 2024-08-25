@@ -6,13 +6,13 @@ import net.botwithus.rs3.script.ScriptConsole;
 import net.botwithus.rs3.script.ScriptGraphicsContext;
 
 public class SkeletonScriptGraphicsContext extends ScriptGraphicsContext {
-    private final SkeletonScript script;
+    private final Constructor script;
     private long scriptStartTime;
     private int startingXP;
     boolean isScriptRunning = false;
     private final int startingConstructionLevel;
 
-    public SkeletonScriptGraphicsContext(ScriptConsole console, SkeletonScript script) {
+    public SkeletonScriptGraphicsContext(ScriptConsole console, Constructor script) {
         super(console);
         this.script = script;
         this.startingXP = Skills.CONSTRUCTION.getSkill().getExperience();
